@@ -4,8 +4,8 @@ import java.io.PrintStream;
 import java.util.Scanner;
 
 public class QuickFind {
-    int id[];
-    int size;
+    private int id[];
+    private int size;
 
     public QuickFind(int n) {
         this.id = new int[n];
@@ -45,7 +45,6 @@ public class QuickFind {
         while(t-- > 0){
             int u = sc.nextInt();
             int v = sc.nextInt();
-
             pr.println("u : "+ u + ", v: " + v + " isConnected Status :  "+qf.isConnected(u,v));
             System.out.println("u : "+ u + ", v: " + v + " isConnected Status :  "+qf.isConnected(u,v));
         }
